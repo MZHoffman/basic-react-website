@@ -83,9 +83,7 @@ const Login = (props) => {
       <form onSubmit={submitHandler}>
         <Input
           isValid={emailState.isValid}
-          htmlFor='email'
           type='email'
-          id='email'
           value={emailState.value}
           onChange={emailChangeHandler}
           onBlur={validateEmailHandler}
@@ -94,9 +92,7 @@ const Login = (props) => {
         </Input>
         <Input
           isValid={emailState.isValid}
-          htmlFor='password'
           type='password'
-          id='password'
           value={passwordState.value}
           onChange={passwordChangeHandler}
           onBlur={validatePasswordHandler}

@@ -10,10 +10,10 @@ const Input = (props) => {
         props.isValid === false ? classes.invalid : ''
       }`}
     >
-      <label htmlFor={props.htmlFor}>{props.children}</label>
+      <label htmlFor={props.type}>{props.children}</label>
       <input
         type={props.type || 'text'}
-        id={props.id}
+        id={props.type}
         value={props.value}
         onChange={props.onChange}
         onBlur={props.onBlur}
